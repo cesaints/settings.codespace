@@ -1,2 +1,5 @@
-# www.optometry.com
-End-to-end development, from conception to implementation, of a system focused on the field of Optometry, with an emphasis on data validation and compliance for industry professionals.
+# Configuration
+
+Here it will be just a project to implement a scalable LTS architecture, with the configuration of the react and next.js versions (in the package.json file) detailing the versions that were used.
+
+Creation by Github's CodeSpace, and configuring the ports to be public and render the home page.
