@@ -1,37 +1,40 @@
-# Project Setup and Configuration
+# Next.js Codespaces Setup Experiment
 
-## 1. Docker and WSL Installation
-- Installed **Docker** on Windows.  
-- Enabled **WSL (Windows Subsystem for Linux)** and installed **Ubuntu**.  
-- Installed **Docker Engine** inside Ubuntu.  
-- Added Docker’s official **GPG key**.  
-- Added the Docker repository to the **APT package sources**.  
-- Granted permissions for the current user to run Docker without `sudo`.  
+An early learning repository for starting a minimal Next.js application in a GitHub Codespaces environment.
 
-## 2. Node.js Environment
-- Installed **NVM (Node Version Manager)** to handle Node.js versions.  
-- Selected the **LTS (Hydrogen)** release for stability and long-term support.  
-- Created an **.nvmrc** file with the correct Node.js version.  
+The current source consists of a small page displaying a test heading and a package manifest with a development-server command. It records environment setup practice.
 
-## 3. Git and GitHub Setup
-- Configured **Git** locally.  
-- Connected **GitHub** via SSH:  
-  1. Generated a new SSH key.  
-  2. Added the key to the SSH agent.  
-  3. Registered the SSH key on GitHub.  
+## Source versions
 
-## 4. Project Dependencies
-- Installed and configured:  
-  - **Next.js** `13.1.6`  
-  - **React** `18.2.0`  
-  - **React-DOM** `18.2.0`  
+- Next.js `^13.1.6`
+- React `^18.2.0`
+- React DOM `^18.2.0`
 
-## 5. Development Environment
-- Configured the project to run with:  
+These are the versions declared in the repository. They are not a recommendation for a new application.
+
+## Run the development page
+
+Prerequisites: Node.js and npm compatible with the declared dependencies.
 
 ```bash
+git clone https://github.com/cesaints/settings.codespace.git
+cd settings.codespace
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```
+
+In Codespaces, open the forwarded development port from the Ports panel. A public port is unnecessary for a personal preview.
+
+The package manifest defines only `dev`. Build, test and deployment commands are not provided by this repository.
+
+## Current state
+
+The tracked tree includes generated `.next` output and dependency artifacts. These should be reviewed and removed from version control in a separate cleanup change.
+
+The repository demonstrates a setup exercise. It does not contain evidence of a scalable application architecture or a tested reusable development template.
+
+The commands above were checked against source and were not executed for this documentation review.
+
+## Rights
+
+No license file was present in the reviewed revision.
